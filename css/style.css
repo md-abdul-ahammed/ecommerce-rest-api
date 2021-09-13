@@ -1,65 +1,71 @@
+/* Add Custom Font Here */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 body {
   overflow-x: hidden;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Oswald', sans-serif !important;
+  background-color: #2F0743 !important;
 }
-.search-field {
-  border: none;
-  border-radius: 50px;
-  padding: 5px;
-  outline: none;
+/* Description Area Design Here */
+#show-details{
+  display: none;
+  margin-left: 1rem;
+  
 }
-.search-field:hover {
-  outline: none;
-  border: none;
+/* Custom Button Fix Here */
+.btn-danger {
+  color: #fff !important;
+  margin-left: 2rem;
 }
-.search-box {
-  border: 1px solid rgb(3, 118, 211);
-  width: 281px;
-  border-radius: 5px;
-  margin: auto;
-  margin-top: 50px;
-  border-right: none;
+/* This Class create for taking images center */
+.image-center{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
-.search-button {
-  padding: 10px 50px;
-  border-radius: 25px;
-  margin-left: 20px;
-}
+/* All Products Area Design here */
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* border: 1px solid black; */
-  text-align: center;
+  column-gap: 1rem;
+  row-gap: 1rem;
   width: 100%;
   margin: auto;
+  padding-left: 1rem;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
 }
-.single-product {
-  padding: 10px;
-  transition: 0.6s;
-}
-.single-product:hover {
-  box-shadow: 4px 4px 7px gray;
+/* All Products Area here */
+.single-product { 
+  border: 1px solid grey;
+  padding: 20px 15px;
+  transition: 0.4s;
+  height: 470px ;
   border-radius: 10px;
-  border: 1px solid cyan;
+  background-image: linear-gradient(#fff,#fff, #fffc00);
 }
+.single-product:hover{
+  box-shadow: 0px 0px 10px red;
+}
+/* Fixed Images Size */
 .product-image {
   width: 150px;
   height: 150px;
 }
+/* Cart Page Design */
 .cart {
   width: 350px;
-  /* border: 1px solid green; */
+  border: 1px solid #fff;
   padding: 10px;
-  box-shadow: 10px 10px 20px gray;
   border-radius: 5px;
   margin-right: 30px;
   position: fixed;
+  background-image: linear-gradient(to right, #fffc00, #fff, #fff);
 }
 .cart-main {
   padding-right: 30px;
 }
+/* Custom Responsive Here */
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;
